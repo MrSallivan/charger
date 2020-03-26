@@ -114,15 +114,14 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 
 //<ОСНОВНАЯ СЕТКА>===========================================================================================================
 .container{max-width:$mw+px;margin: 0 auto;width: 100%;
-	@media (max-width:$md1+px){max-width: 970px;}
 	@media (max-width:$md2+px){max-width: 750px;}
-	@media (max-width:$md3+px){max-width: none;padding:0 10px;}
+	@media (max-width:$md3+px){max-width: none;padding:0 15px;}
+	@media (max-width:$md4+px){max-width: none;padding:0 10px;}
 }
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 @import "popup.scss";
-@import "header.scss";
 @import "footer.scss";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
@@ -131,34 +130,75 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 	// .first__content
 	&__content {
 		position: relative;
-		background:transparent url('../img/section1/bg2.png') left top no-repeat;
+		background: url('../img/section1/bg2.png') left top no-repeat;
+		max-height: 624px;
 	}
 	// .first__row
 	&__row {
+		position: relative;
+		z-index: 2;
 		@include flexbox();
 	}
 	// .first__column1
-	&__column1 {}
+	&__column1 {
+		flex: 0 0 460px;
+		@media (max-width:$md4+px){
+			flex: 1 1 auto;
+		}
+	}
 	// .first__logo
 	&__logo {
-		color: red;
+		color: #fff;
 		font-family: "SFCompactText-Semibold";
 		font-size: 35px;
 		font-weight: 400;
 		line-height: 22.63px;
 		text-transform: uppercase;
 		letter-spacing: -0.2px;
+		margin: 61px 0px 105px 0px;
+		&_link {
+			color: #fff;
+		}
+		@media (max-width:$md4+px){
+			margin: 30px auto 50px auto;
+			text-align: center;
+		}
 	}
 	// .first__title
-	&__title {}
+	&__title {
+		@media (max-width:$md4+px){
+			@include flexbox();
+			justify-content: center;
+		}
+	}
 	// .first__text
-	&__text {}
+	&__text {
+		font-family: $fontfamily;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		color: #fff;
+		@media (max-width:$md4+px){
+			text-align: center;
+		}
+	}
 	// .first__appbtn
-	&__appbtn {}
+	&__appbtn {
+		margin: 16px 0px 57px 1px;
+		@media (max-width:$md4+px){
+			margin: 20px auto 40px auto;
+		}
+	}
 	// .first__form1
 	&__form1 {}
 	// .first__column2
-	&__column2 {}
+	&__column2 {
+		flex: 0 0 auto;
+		position: relative;
+		@media (max-width:$md2+px){
+			display: none;
+		}
+	}
 	// .first__image
 	&__image {
 		position: absolute; 
@@ -170,57 +210,145 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 }
 
 .title {
+	@include flexbox();
+	margin: 0px 0px 30px 0px;
 	// .title__logo
-	&__logo {}
+	&__logo {
+		margin: 0px 25px 0px 0px;
+		@media (max-width:$md4+px){
+			margin: 0px 15px 0px 0px;
+		}
+	}
 	// .title__text
 	&__text {
 		// .title__text_top
 		&_top {
-			/* Style for "Battery Do" */
-			font-family: "Helvetica Neue";
-			font-size: 16px;
+			font-family: "MyriadProRegular";
+			font-size: 32px;
 			font-weight: 400;
 			color: #fff;
-			// font-size: 32px;
-			// font-weight: 400;
-			// line-height: 32px;
-			// /* Text style for "No Problem" */
-			// color: #3cd072;
-			// font-family: "Myriad Pro - Semibold";
-			// font-size: 32px;
-			// font-weight: 600;
-			// line-height: 32px;
-			// /* Text style for ", With Cha" */
-			// font-family: "Helvetica Neue";
-			// line-height: 24px;
+			@media (max-width:$md4+px){
+				font-size: 24px;
+			}
 		}
 		// .title__text_but
-		&_but {}
+		&_but {
+			color: #fff;
+			font-family: "MyriadProRegular";
+			font-size: 32px;
+			font-weight: 600;
+			line-height: 32px;
+			@media (max-width:$md4+px){
+				font-size: 24px;
+				line-height: 24px;
+			}
+		}
+	}
+}
+.apple-link {
+	@media (max-width:$md4+px){
+		@include flexbox();
+		justify-content: center;
+		align-items: center;
 	}
 }
 .appbtn {
+	width: 216px;
+	height: 48px;
+	border-radius: 5px;
+	padding: 0px 0px 0px 81px;
+	background:#0d0d0d url('../img/section1/icons/Apple_logo.png') 36px 5px no-repeat;
 	// .appbtn__top
-	&__top {}
+	&__top {
+		color: #ffffff;
+		font-family: "Lucida Grande";
+		font-size: 10px;
+		font-weight: 400;
+		line-height: 19.75px;
+		letter-spacing: -0.39px;
+		display: block;
+		padding: 4px 0px 0px 81px;
+	}
 	// .appbtn__but
-	&__but {}
-}
-.btn {
+	&__but {
+		display: block;
+		color: #ffffff;
+		font-family: "Lucida Grande";
+		font-size: 19px;
+		font-weight: 400;
+		line-height: 19.75px;
+		letter-spacing: -0.7px;
+		padding: 0px 0px 0px 81px;
+	}
 }
 .form1 {
+	margin: 0px 0px 84px 0px;
+	@media (max-width:$md4+px){
+		@include flexbox();
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		margin: 0px 0px 50px 0px;
+	}
 	// .form1__text
-	&__text {}
+	&__text {
+		color: #ffffff;
+		font-family: "MyriadProRegular";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		margin: 0px 0px 12px 0px;
+	}
+	&__input {
+		display: inline-block;
+		width: 296px;
+		margin: 0px 26px 0px 0px;
+		@media (max-width:$md4+px){
+			margin: 0px 0px 15px 0px;
+		}
+	}
 	// .form1__input
-	&__input {}
-	// .form1__btn
-	&__btn {}
+	&__btn {
+		display: inline-block;
+		width: 136px;
+		height: 48px;
+		background-color: #ffffff;
+		border-radius: 5px;
+		color: #3cd072;
+		font-family: "MyriadProRegular";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		@media (max-width:$md4+px){
+			width: 296px;
+		}
+	}
 }
+
 .input {
+	border: 2px solid #ffffff;
+	color: #fff;
+	background-color: transparent;
+	height: 48px;
 }
+
 .iphone {
 	// .iphone__black
-	&__black {}
+	&__black {
+		position: absolute;
+		top: 82px;
+		left: 91px;
+		width: 272px;
+		height: 566px;
+	}
 	// .iphone__white
-	&__white {}
+	&__white {
+		position: absolute;
+		top: 125px;
+		left: 216px;
+		width: 276px;
+		height: 571px;
+	}
 }
 
 
