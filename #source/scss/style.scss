@@ -479,6 +479,89 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 		}
 	}
 }
+//</SECTION THREE>====================================================================================================
+.three {
+		// .three__content
+		&__content {
+		}
+		// .three__row
+		&__row {
+		}
+		// .three__logo
+		&__logo {
+			margin: 0px 0px 31px 0px;
+			padding: 48px 0px 0px 0px;
+			img {
+				display: block;
+				margin: 0 auto;
+			}
+		}
+		// .three__title
+		&__title {
+		}
+		// .three__items
+		&__items {
+			@include flexbox();
+		}
+}
+.three-title {
+		@include flexbox();
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		// .three-title__text1
+		&__text1 {
+			color: #000000;
+			font-family: "MyriadProRegular";
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 32px;
+		}
+		// .three-title__text2
+		&__text2 {
+			margin: 16px 0px 44px 0px;
+			color: #3cd072;
+			font-family: "MyriadProRegular";
+			font-size: 36px;
+			font-weight: 400;
+			line-height: 32px;
+		}
+}
+.three-items {
+		// .three-items__item
+		&__item {
+			margin: 0px 10px 0px 10px;
+			min-height: 100%;
+		}
+}
+.three-item {
+		flex: 1 1 33.333%;
+		@include flexbox();
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		
+		// .three-item__logo
+		&__logo {
+			text-align: center;
+		}
+		// .three-item__text
+		&__text {
+			color: #000000;
+			font-family: "MyriadProRegular";
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 32px;
+			text-align: center;
+			margin: 31px 0px 51px 0px;
+		}
+		// .three-item__image
+		&__image {
+			width: 296px;
+			height: 360px;
+		}
+}
+
 
 
 
