@@ -691,12 +691,44 @@ h1, h2, h3, h4, h5, h6 {
 .four {
   background-color: #000;
 }
+.four__content {
+  padding: 0px 0px 90px 0px;
+}
+.four__body {
+  margin: 0 -20px;
+  display: flex;
+  font-size: 0;
+  justify-content: space-between;
+}
+@media (max-width: 767.98px) {
+  .four__body {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+.four__item {
+  margin: 0 2.5px;
+  flex: 1 1 8.333%;
+}
+@media (max-width: 767.98px) {
+  .four__item {
+    margin: 5px;
+    flex: 0 1 15%;
+  }
+}
+.four__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .four-title {
   display: flex;
   font-size: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 79px 0px 52px 0px;
 }
 .four-title__text1 {
   color: #ffffff;
@@ -704,6 +736,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
+  padding: 0px 0px 16px 0px;
 }
 .four-title__text2 {
   color: #3cd072;
@@ -711,6 +744,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 36px;
   font-weight: 400;
   line-height: 32px;
+}
+@media (max-width: 479.98px) {
+  .four-title__text2 {
+    text-align: center;
+  }
 }
 
 .form-row {
