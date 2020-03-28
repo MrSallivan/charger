@@ -482,11 +482,9 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 //</SECTION THREE>====================================================================================================
 .three {
 		// .three__content
-		&__content {
-		}
+		
 		// .three__row
-		&__row {
-		}
+	
 		// .three__logo
 		&__logo {
 			margin: 0px 0px 31px 0px;
@@ -497,8 +495,7 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 			}
 		}
 		// .three__title
-		&__title {
-		}
+
 		// .three__items
 		&__items {
 			@include flexbox();
@@ -578,6 +575,47 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 				
 				
 			}
+		}
+}
+//</SECTION FOUR>====================================================================================================
+.four {
+	background-color: #000;
+		// .four__content
+		&__content {
+		}
+		// .four__title
+		&__title {
+		}
+		// .four__images
+		&__images {
+		}
+		// .four__body
+		&__body {
+		}
+		// .four__item
+		&__item {
+		}
+}
+.four-title {
+	@include flexbox();
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+		// .four-title__text1
+		&__text1 {
+			color: #ffffff;
+			font-family: "MyriadProRegular";
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 32px;
+		}
+		// .four-title__text2
+		&__text2 {
+			color: #3cd072;
+			font-family: "MyriadProRegular";
+			font-size: 36px;
+			font-weight: 400;
+			line-height: 32px;
 		}
 }
 
