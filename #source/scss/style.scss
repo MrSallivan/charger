@@ -221,6 +221,13 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 	// .title__text
 	&__text {
 		// .title__text_top
+		&_blk {
+			color: #fff;
+			font-family: "MyriadProRegular";
+			font-size: 36px;
+			font-weight: 400;
+			line-height: 32px;
+		}
 		&_top {
 			font-family: "MyriadProRegular";
 			font-size: 32px;
@@ -646,6 +653,138 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 			}
 		}
 }
+//</SECTION FIVE>====================================================================================================
+.five {
+	
+		// .five__content
+		&__content {
+			position: relative;
+			background: url('../img/section5/bg2.png') left top no-repeat;
+			max-height: 696px;
+		}
+		// .five__row
+		&__row {
+			@include flexbox();
+
+		}
+		// .five__column
+		&__column {
+			flex: 0 1 50%;
+			&_2 {
+				align-self: flex-end;
+			}
+		}
+		// .five__title
+		&__title {
+			padding: 70px 0px 0px 0px;
+			@include flexbox();
+			justify-content: flex-start;
+			align-items: center;
+		}
+		// .five__text
+		&__text {
+			color: #000000;
+			font-family: "Helvetica Neue";
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 24px;
+			margin: 0px 0px 30px 0px;
+		}
+		// .five__textp
+		// .five__items
+		&__items {
+		}
+		// .five__item
+		&__item {
+		}
+		// .five__form
+		&__form {
+			background-color: #f0f0f0;
+			padding: 55px 0px 48px 0px;
+		}
+}
+
+.five-item {
+	@include flexbox();
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0px 0px 26px 0px;
+	&:last-child {
+		margin: 0px 0px 38px 0px;
+	}
+		// .five-item__icon
+		&__icon {
+			margin: 0px 25px 0px 0px;
+		}
+		// .five-item__text
+		&__text {
+			color: #ffffff;
+			font-family: "MyriadProRegular";
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 24px;
+			max-width: 300px;
+		}
+}
+.iphone-block {
+	@include flexbox();
+	align-items: flex-end;
+	margin: 0px -50px 0px 0px;
+		// .iphone-block__1
+		&__1 {
+			margin: 0px 20px 0px 0px;
+			flex: 1 1 33.333%;
+			max-width: 145px;
+			max-height: 378px;
+		}
+		// .iphone-block__2
+		&__2 {
+			margin: 0px 20px 0px 0px;
+			flex: 1 1 33.333%;
+			max-width: 174px;
+			max-height: 467px;
+		}
+		// .iphone-block__3
+		&__3 {
+			flex: 1 1 33.333%;
+			max-width: 212px;
+			max-height: 578px;
+		}
+}
+.form2 {
+	@include flexbox();
+	justify-content: space-between;
+		// .form1__p
+		&__p {
+			color: #000000;
+			font-family: "MyriadProRegular";
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 24px;
+			margin: 0px 0px 19px 0px;
+		}
+		// .form1__input
+		&__input {
+			flex: 0 1 696px;
+			margin: 0px 24px 0px 0px;
+		}
+		&__btn {
+			width: 216px;
+			height: 48px;
+			background-color: #000000;
+			color: #3cd072;
+			font-family: "MyriadProRegular";
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 24px;
+			border-radius: 5px;
+		}
+}
+.input {
+}
+
+
+
 
 //====================================================================================================
 

@@ -323,6 +323,13 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0px 15px 0px 0px;
   }
 }
+.title__text_blk {
+  color: #fff;
+  font-family: "MyriadProRegular";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 32px;
+}
 .title__text_top {
   font-family: "MyriadProRegular";
   font-size: 32px;
@@ -751,6 +758,116 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.five__content {
+  position: relative;
+  background: url("../img/section5/bg2.png") left top no-repeat;
+  max-height: 696px;
+}
+.five__row {
+  display: flex;
+  font-size: 0;
+}
+.five__column {
+  flex: 0 1 50%;
+}
+.five__column_2 {
+  align-self: flex-end;
+}
+.five__title {
+  padding: 70px 0px 0px 0px;
+  display: flex;
+  font-size: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+.five__text {
+  color: #000000;
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0px 0px 30px 0px;
+}
+.five__form {
+  background-color: #f0f0f0;
+  padding: 55px 0px 48px 0px;
+}
+
+.five-item {
+  display: flex;
+  font-size: 0;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px 0px 26px 0px;
+}
+.five-item:last-child {
+  margin: 0px 0px 38px 0px;
+}
+.five-item__icon {
+  margin: 0px 25px 0px 0px;
+}
+.five-item__text {
+  color: #ffffff;
+  font-family: "MyriadProRegular";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 300px;
+}
+
+.iphone-block {
+  display: flex;
+  font-size: 0;
+  align-items: flex-end;
+  margin: 0px -50px 0px 0px;
+}
+.iphone-block__1 {
+  margin: 0px 20px 0px 0px;
+  flex: 1 1 33.333%;
+  max-width: 145px;
+  max-height: 378px;
+}
+.iphone-block__2 {
+  margin: 0px 20px 0px 0px;
+  flex: 1 1 33.333%;
+  max-width: 174px;
+  max-height: 467px;
+}
+.iphone-block__3 {
+  flex: 1 1 33.333%;
+  max-width: 212px;
+  max-height: 578px;
+}
+
+.form2 {
+  display: flex;
+  font-size: 0;
+  justify-content: space-between;
+}
+.form2__p {
+  color: #000000;
+  font-family: "MyriadProRegular";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0px 0px 19px 0px;
+}
+.form2__input {
+  flex: 0 1 696px;
+  margin: 0px 24px 0px 0px;
+}
+.form2__btn {
+  width: 216px;
+  height: 48px;
+  background-color: #000000;
+  color: #3cd072;
+  font-family: "MyriadProRegular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 5px;
+}
+
 .form-row {
   display: flex;
   font-size: 0;
@@ -859,6 +976,8 @@ input[type=text], input[type=email], input[type=tel], textarea {
   width: 100%;
   display: block;
   padding: 0px 20px;
+  color: #3cd072;
+  border-color: #3cd072;
 }
 textarea.input {
   resize: none;

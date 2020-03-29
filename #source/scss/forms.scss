@@ -61,6 +61,9 @@ input[type=text],input[type=email],input[type=tel],textarea{-webkit-appearance:n
 	width: 100%;
 	display: block;
 	padding: 0px 20px;
+	color: #3cd072;
+	border-color: #3cd072;
+	
 	&.focus{}
 	&.err{}
 }
