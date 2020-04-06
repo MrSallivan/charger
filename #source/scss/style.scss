@@ -72,7 +72,7 @@ $fontfamily: "Helvetica Neue";
 
 //<ПЕРЕМЕННЫЕ>===========================================================================================================
 $minwidth:320px;
-$mw:940;
+$mw:960;
 $md1:$mw+12;
 $md2:992.98;
 $md3:767.98;
@@ -778,12 +778,49 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 			font-weight: 400;
 			line-height: 24px;
 			border-radius: 5px;
+			&_6 {
+				width: 300px;
+				padding: 0px 20px 0px 20px;
+				margin: 0 auto;
+				display: block;
+			}
 		}
 }
-.input {
+//</SECTION 6>====================================================================================================
+.six {
+		// .six__content
+		&__content {
+		}
+		// .six__block1
+		&__block1 {
+		}
+		// .six__block2
+		&__block2 {
+		}
+		// .six__block3
+		&__block3 {
+		}
 }
-
-
+.block1 {
+		// .block1__text
+		&__text {
+		}
+}
+.block2 {
+		// .block2__img
+		&__img {
+		}
+}
+.block3 {
+}
+.form2 {
+		// .form2__btn
+		&__btn {
+			// .form2__btn_6
+			&_6 {
+			}
+		}
+}
 
 
 //====================================================================================================
